@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #ccc;
+  letter-spacing: 0.5px;
+  word-spacing: 0.5px;
+}
+
+/* Police à revoir */
+
+/*************************** Barre de nav ********************************/
+body {
+  background: rgba(0, 0, 0, 0.884);
+}
+
+header {
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  background: #141414;
+}
+
+header h1 {
+  font-size: 30px;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin: 0 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+header nav {
+  vertical-align: top;
+  display: inline-block;
+  height: 100%;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  height: 100%;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0;
+  height: 100%;
+  width: 150px;
+  text-align: center;
+}
+
+header nav ul li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 50px;
+  color: #ccc;
+  text-decoration: none;
+  transition: .2s;
+}
+
+header nav ul li a:hover {
+  background: #333;
+}
+
+/*************************** Body, intro présentation ********************************/
+
+/* Faire des ombres sur images et blocs de texte */
+
+.intro {
+  display: grid;
+  height: 300px;
+  grid-template-columns: 45% 55%;
+  grid-template-rows: 100px 200px;
+  grid-template-areas:
+    "titre img"
+    "texte img";
+}
+
+.intro h2 {
+  grid-area: titre;
+  text-align: center;
+  padding: 40px;
+}
+
+.intro p {
+  grid-area: texte;
+  text-align: center;
+  padding: 0 40px;
+}
+
+.intro .img-code {
+  grid-area: img;
+  background: url(./images/code-intro.jpg) center/cover;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/*************************** Section articles ********************************/
+
+.main {
+  width: 90%;
+}
+
+.main h2 {
+  text-align: center;
+  font-size: 40px;
+  margin: 20px;
+  margin-bottom: 30px;
+}
+
+/*************************** Article 1 ********************************/
+
+.num-one {
+  display: grid;
+  height: 300px;
+  grid-template-columns: 45% 55%;
+  grid-template-rows: 40px 40px 200px 20;
+  grid-template-areas:
+    "img titre"
+    "img date"
+    "img texte"
+    "img btn";
+}
+
+.num-one h3 {
+  grid-area: titre;
+  margin: 0 10px;
+  padding-top: 10px;
+}
+
+.num-one h4 {
+  margin: 0 10px;
+}
+
+.num-one p {
+  grid-area: texte;
+  margin: 0 10px;
+}
+
+.num-one a {
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  grid-area: btn;
+  margin: 10px;
+  left: 0;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  background: #333;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+}
+
+/* Styliser le bouton lien  */
+
+.num-one .img-article {
+  grid-area: img;
+  background: url(./images/astronaut.jpg) center/cover;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/*************************** Article 2 ********************************/
+
+.num-two {
+  display: grid;
+  height: 300px;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: 40px 40px 200px 20;
+  grid-template-areas:
+    "titre img"
+    "date img"
+    "texte img"
+    "btn img";
+}
+
+.num-two h3 {
+  grid-area: titre;
+  margin: 0 10px;
+  padding-top: 10px;
+}
+
+.num-two h4 {
+  margin: 0 10px;
+}
+
+.num-two p {
+  grid-area: texte;
+  margin: 0 10px;
+}
+
+.num-two a {
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  grid-area: btn;
+  position: relative;
+  margin: 10px;
+  left: 74.5%;
+  /* Régler position du bouton  */
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  background: #333;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+}
+
+/* Styliser le bouton lien  */
+
+.num-two .img-article {
+  grid-area: img;
+  background: url(./images/monitor.jpg) center/cover;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/*************************** Article 3 ********************************/
+
+.num-three {
+  display: grid;
+  height: 300px;
+  grid-template-columns: 45% 55%;
+  grid-template-rows: 40px 40px 200px 20;
+  grid-template-areas:
+    "img titre"
+    "img date"
+    "img texte"
+    "img btn";
+}
+
+.num-three h3 {
+  grid-area: titre;
+  margin: 0 10px;
+  padding-top: 10px;
+}
+
+.num-three h4 {
+  margin: 0 10px;
+}
+
+.num-three p {
+  grid-area: texte;
+  margin: 0 10px;
+}
+
+.num-three a {
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  grid-area: btn;
+  margin: 10px;
+  left: 0;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  background: #333;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+}
+
+/* Styliser le bouton lien  */
+
+.num-three .img-article {
+  grid-area: img;
+  background: url(./images/cyber-security.jpg) center/cover;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/*************************** Footer ********************************/
+
+footer {
+  position: relative;
+  text-align: right;
+  height: 70px;
+  background: #141414;
+  padding: 10px;
+  padding-right: 20px;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
